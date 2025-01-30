@@ -71,7 +71,7 @@ jobs:
           --activate-profiles staging \
           --activate-profiles ${{ matrix.tool }} \
           --file mq/main \
-          verify \
+          clean verify \
           --projects -packager-opensource \
           --define skipTests=true \
           -Dscan.tag.mq.main
